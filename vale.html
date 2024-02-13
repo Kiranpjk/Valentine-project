@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+       <title>Valientine Proposal</title>
+    <style>
+        body{
+            font-family: cursive;
+             font-size:medium;
+        }
+        div {
+            margin: 100px auto 100px;
+            width: 200px;
+            padding: 50px;
+            border-radius: 10px;
+            border-color: blue;
+            border: 1px solid black;
+   
+}
+#b1{
+margin-left: 70px;
+margin-right: 10px;
+}
+#but{
+    position: absolute;
+    transition: 0.7s ease;
+}
+
+#text{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#pic{
+    border-radius: 50px;
+}
+    </style>
+    </head>
+    <body >
+        <div>
+            <img src="https://media.tenor.com/al4a1pG1f8YAAAAM/jump-bear.gif" id="pic">
+            <p id="text">Will u be My Valentine Partner?</p>
+            <button id="b1">Yes</button>
+            <button id="but">No</button>
+        </div>
+               <script>
+            const button = document.getElementById('but');
+            const defaultColor = getComputedStyle(document.body).backgroundColor; 
+            button.addEventListener('mouseover', () => {
+                button.style.left= `${Math.floor(Math.random()*90)}%`;
+                button.style.right= `${Math.floor(Math.random()*90)}%`;
+               document.body.style.backgroundColor = 'pink'; 
+               
+            });
+        
+            button.addEventListener('mouseout', () => {
+                document.body.style.backgroundColor = defaultColor;
+                button.style.left=none;
+                button.style.right=none;
+            });
+           
+        </script>
+        
+    </body>
+</html>
